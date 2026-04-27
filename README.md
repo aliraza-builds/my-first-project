@@ -1,19 +1,30 @@
-# My First Project
+# 👋 Hello, I'm Ali Raza
 
-## About
+Welcome to my GitHub profile!
 
-This is my first project on GitHub. I created this repository while learning how Git and GitHub work. It may be simple, but it’s an important step in my learning journey.
+I'm a Software Engineering student currently in my 6th semester.  
+I have learned many concepts during my academic journey, and now I am focusing more on practical implementation to improve my real-world development skills.
 
-## What I'm Learning
+## 🚀 About Me
+- 🎓 Software Engineering Student (6th Semester)
+- 💻 Learning and practicing programming concepts
+- 🌱 Currently improving my skills in software development
+- 🎯 Goal: To become a skilled and industry-ready software engineer
 
-* How to use Git for version control
-* How to upload and manage projects on GitHub
-* How to keep track of changes in code
+## 🛠️ Skills
+- Programming Fundamentals (C++, Java, Python basics)
+- Object-Oriented Programming (OOP)
+- Database Basics (SQL)
+- Web Development (HTML, CSS, basic JavaScript)
+- Problem Solving & Logical Thinking
 
-## Future Plans
+## 📌 What I'm Working On
+Right now, I am focusing on:
+- Strengthening my practical coding skills
+- Building small projects for experience
+- Learning how real-world software systems work
 
-I will keep improving this project and also upload more projects as I learn new things.
+## 📫 Let's Connect
+I am always open to learning, collaboration, and guidance from experienced developers.
 
-## Note
-
-This is just the beginning. More updates coming soon 🙂
+Thanks for visiting my profile! 😊
