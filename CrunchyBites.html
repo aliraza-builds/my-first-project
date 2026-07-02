@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrunchyBite - Taste the Crunch!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-burger">🍔</div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Crunchy<span>Bite</span> 🍟</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#order" class="btn btn-primary">Order Now</a>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">🔥 #1 Fast Food in Town</span>
+      <h1>Crunch Into <span class="highlight">Happiness</span></h1>
+      <p>Hot, crispy, and full of flavor — CrunchyBite serves the juiciest burgers, crunchiest fries, and the cheesiest pizzas in town. Order now and taste the difference!</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">View Menu <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <h3 data-target="15">0</h3>
+          <p>Years of Taste</p>
+        </div>
+        <div class="stat">
+          <h3 data-target="50">0</h3>
+          <p>Menu Items</p>
+        </div>
+        <div class="stat">
+          <h3 data-target="20000">0</h3>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="floating-img main-img">🍔</div>
+      <div class="floating-img f1">🍕</div>
+      <div class="floating-img f2">🍟</div>
+      <div class="floating-img f3">🥤</div>
+      <div class="floating-img f4">🌮</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-image">
+      <div class="about-img-box">👨‍🍳</div>
+      <div class="experience-badge">
+        <h3>15+</h3>
+        <p>Years of<br>Experience</p>
+      </div>
+    </div>
+    <div class="about-content">
+      <span class="section-tag">About Us</span>
+      <h2>We Serve Taste, <br>Not Just Food</h2>
+      <p>At CrunchyBite, every bite tells a story. We use only the freshest ingredients, secret family recipes, and a whole lot of love to bring you flavors that keep you coming back for more.</p>
+      <div class="about-features">
+        <div class="feature">
+          <i class="fa-solid fa-leaf"></i>
+          <div>
+            <h4>Fresh Ingredients</h4>
+            <p>Sourced daily from local farms</p>
+          </div>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-bolt"></i>
+          <div>
+            <h4>Fast Delivery</h4>
+            <p>Hot food at your door in 30 mins</p>
+          </div>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-award"></i>
+          <div>
+            <h4>Award Winning</h4>
+            <p>Best Fast Food Chain 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <div class="section-header">
+      <span class="section-tag center">Our Menu</span>
+      <h2>Crispy, Cheesy & Delicious</h2>
+      <p>Hand-picked favorites that our customers can't stop talking about</p>
+    </div>
+
+    <div class="menu-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="burger">Burgers</button>
+      <button class="filter-btn" data-filter="pizza">Pizza</button>
+      <button class="filter-btn" data-filter="fries">Sides</button>
+      <button class="filter-btn" data-filter="drinks">Drinks</button>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-card" data-category="burger">
+        <div class="menu-icon">🍔</div>
+        <span class="menu-badge">Bestseller</span>
+        <h3>Crunchy Cheese Burger</h3>
+        <p>Double patty, melted cheddar, crispy lettuce & special sauce</p>
+        <div class="menu-footer">
+          <span class="price">$8.99</span>
+          <button class="add-btn">Add <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="pizza">
+        <div class="menu-icon">🍕</div>
+        <span class="menu-badge">New</span>
+        <h3>Loaded Pepperoni Pizza</h3>
+        <p>Stuffed crust, extra cheese & spicy pepperoni slices</p>
+        <div class="menu-footer">
+          <span class="price">$12.49</span>
+          <button class="add-btn">Add <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="fries">
+        <div class="menu-icon">🍟</div>
+        <h3>Crispy Crunch Fries</h3>
+        <p>Golden fries seasoned with our signature crunchy spice mix</p>
+        <div class="menu-footer">
+          <span class="price">$3.99</span>
+          <button class="add-btn">Add <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="burger">
+        <div class="menu-icon">🌮</div>
+        <span class="menu-badge">Spicy</span>
+        <h3>Crunchy Taco Wrap</h3>
+        <p>Crispy chicken, salsa, cheese wrapped in a soft tortilla</p>
+        <div class="menu-footer">
+          <span class="price">$6.49</span>
+          <button class="add-btn">Add <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="drinks">
+        <div class="menu-icon">🥤</div>
+        <h3>Fresh Lemon Mojito</h3>
+        <p>Refreshing minty lemon drink to wash it all down</p>
+        <div class="menu-footer">
+          <span class="price">$2.99</span>
+          <button class="add-btn">Add <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="pizza">
+        <div class="menu-icon">🍕</div>
+        <h3>BBQ Chicken Pizza</h3>
+        <p>Smoky BBQ sauce, grilled chicken, onions & mozzarella</p>
+        <div class="menu-footer">
+          <span class="price">$13.99</span>
+          <button class="add-btn">Add <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="fries">
+        <div class="menu-icon">🧀</div>
+        <h3>Cheesy Loaded Wedges</h3>
+        <p>Potato wedges topped with melted cheese & jalapeños</p>
+        <div class="menu-footer">
+          <span class="price">$5.49</span>
+          <button class="add-btn">Add <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="drinks">
+        <div class="menu-icon">🍦</div>
+        <h3>Choco Crunch Shake</h3>
+        <p>Thick chocolate shake topped with crunchy cookie bits</p>
+        <div class="menu-footer">
+          <span class="price">$4.49</span>
+          <button class="add-btn">Add <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="offers" id="offers">
+    <div class="offer-content">
+      <span class="section-tag light">Limited Time</span>
+      <h2>Get 30% OFF on Your First Order!</h2>
+      <p>Use code <strong>CRUNCH30</strong> at checkout and enjoy crispy savings on every meal.</p>
+      <div class="countdown" id="countdown">
+        <div class="time-box"><span id="days">00</span><small>Days</small></div>
+        <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+        <div class="time-box"><span id="mins">00</span><small>Mins</small></div>
+        <div class="time-box"><span id="secs">00</span><small>Secs</small></div>
+      </div>
+      <a href="#order" class="btn btn-light">Claim Offer</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header">
+      <span class="section-tag center">Testimonials</span>
+      <h2>What Our Customers Say</h2>
+    </div>
+    <div class="testimonial-slider" id="testimonialSlider">
+      <div class="testimonial-card active">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Best burger I've had in years! The crunch on every bite is just perfect. CrunchyBite never disappoints."</p>
+        <h4>— Ayesha Khan</h4>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Super fast delivery and the pizza was still hot and crispy. Definitely my go-to fast food spot now!"</p>
+        <h4>— Bilal Ahmed</h4>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Loved the fries and the milkshake combo. Great prices, amazing taste, friendly staff. Highly recommend!"</p>
+        <h4>— Sara Malik</h4>
+      </div>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- Order/CTA Section -->
+  <section class="order-cta" id="order">
+    <div class="cta-box">
+      <h2>Hungry Already? 🍔</h2>
+      <p>Order online now and get fresh, hot food delivered straight to your doorstep.</p>
+      <form class="order-form" id="orderForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="text" placeholder="Delivery Address" required>
+        <button type="submit" class="btn btn-primary">Place Order 🚀</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3 class="logo">Crunchy<span>Bite</span> 🍟</h3>
+        <p>Serving crispy happiness since 2010. Fast, fresh and full of flavor — every single time.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#offers">Offers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Food Street, Lahore, Pakistan</p>
+        <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+        <p><i class="fa-solid fa-envelope"></i> hello@crunchybite.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <p>Mon - Fri: 10:00 AM - 11:00 PM</p>
+        <p>Sat - Sun: 10:00 AM - 1:00 AM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CrunchyBite. All rights reserved. Made with ❤️ and a lot of cheese 🧀</p>
+    </div>
+  </footer>
+
+  <!-- Cart Toast -->
+  <div class="toast" id="toast">Item added to cart! 🛒</div>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
